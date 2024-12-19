@@ -1,2 +1,3 @@
 *.tgz
 *.log
+.DS_Store
