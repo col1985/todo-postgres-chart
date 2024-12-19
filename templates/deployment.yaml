@@ -2,6 +2,7 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: {{ include "todo-postgres-chart.fullname" . }}
+  namespace: {{ .Values.namespace }}
   labels:
     {{- include "todo-postgres-chart.labels" . | nindent 4 }}
 spec:
